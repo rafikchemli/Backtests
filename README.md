@@ -1,7 +1,7 @@
 # Backtests Project
 
 ## Overview
-This project provides a modular framework for backtesting various trading strategies on historical market data. Each strategy is implemented as a separate module, and all strategies share common utilities for data handling, metrics, and plotting.
+A flexible framework for backtesting trading strategies against historical market data, with a focus on SPY500 comparisons. The system is built with modularity in mind - each strategy exists as an independent module while leveraging shared utilities for data processing, performance metrics, and visualization.
 
 ## Project Structure
 ```
@@ -32,11 +32,11 @@ Backtests/
 
 ## How to Run
 1. Install dependencies:
-   ```bash
+   ```
    pip install -r requirements.txt
    ```
 2. Run a specific strategy or all strategies:
-   ```bash
+   ```
    # Run a single strategy
    python main.py --strategy ma200
 
@@ -54,7 +54,7 @@ Backtests/
    - `summarize(self, results, data=None)` - Prints summary statistics and creates plots
 
 3. Register your strategy in `main.py`:
-   ```python
+   ```
    STRATEGIES = {
        # Add your strategy to this dictionary:
        "your_strategy_key": (
@@ -76,7 +76,6 @@ Each strategy generates:
 - Summary statistics in the console (CAGR, drawdown, trade metrics, etc.)
 - Comparison to Buy & Hold benchmark (SPY by default)
 - Equity curve plots saved in the `figures/` directory
-
 
 ## License
 MIT License
