@@ -39,10 +39,10 @@ Backtests/
    ```bash
    # Run a single strategy
    python main.py --strategy ma200
-   
+
    # Run all registered strategies
    python main.py --all
-   
+
    # Get help on available options
    python main.py --help
    ```
@@ -58,7 +58,7 @@ Backtests/
    STRATEGIES = {
        # Add your strategy to this dictionary:
        "your_strategy_key": (
-           "strategies.your_module", "YourStrategyClass", 
+           "strategies.your_module", "YourStrategyClass",
            "SYMBOL", years_back, initial_investment
        ),
        # ...existing strategies...
@@ -77,11 +77,6 @@ Each strategy generates:
 - Comparison to Buy & Hold benchmark (SPY by default)
 - Equity curve plots saved in the `figures/` directory
 
-## Dependencies
-- pandas, numpy: Data manipulation
-- matplotlib, seaborn: Visualization
-- yfinance: Market data retrieval
-- See `requirements.txt` for full details
 
 ## License
-MIT License 
+MIT License

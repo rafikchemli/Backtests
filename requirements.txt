@@ -2,6 +2,7 @@ asttokens==3.0.0
 attrs==25.3.0
 backcall==0.2.0
 beautifulsoup4==4.13.4
+black==24.2.0
 bleach==6.2.0
 certifi==2025.4.26
 cffi==1.17.1
@@ -14,10 +15,13 @@ defusedxml==0.7.1
 docopt==0.6.2
 executing==2.2.0
 fastjsonschema==2.21.1
+flake8==7.0.0
+flake8-docstrings==1.7.0
 fonttools==4.58.0
 frozendict==2.4.6
 idna==3.10
 ipython==8.12.3
+isort==5.13.2
 jedi==0.19.2
 jinja2==3.1.6
 jsonschema==4.23.0
@@ -46,6 +50,7 @@ pillow==11.2.1
 pip==24.0
 pipreqs==0.5.0
 platformdirs==4.3.8
+pre-commit==3.5.0
 prompt-toolkit==3.0.51
 protobuf==6.30.2
 ptyprocess==0.7.0
